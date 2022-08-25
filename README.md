@@ -1,2 +1,2 @@
 # 1Click-Update
-a context menu scrpit to toggle Enable/Disable windows update
+a context menu scrpit to toggle Enable/Disable Windows update
