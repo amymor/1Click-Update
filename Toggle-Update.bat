@@ -93,19 +93,19 @@ ren "C:\Windows\System32\WaaSMedicPS.dll" "+WaaSMedicPS.dll.UP"
 
 : ===== Tasks =====
 :: ==== WindowsUpdate ====
-schtasks /Change /Disable /TN "\Microsoft\Windows\WindowsUpdate\Scheduled Start"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\WindowsUpdate\Scheduled Start"
 :: ==== WaaSMedic ====
-schtasks /Change /Disable /TN "\Microsoft\Windows\WaaSMedic\PerformRemediation"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\WaaSMedic\PerformRemediation"
 :: ==== UpdateOrchestrator ====
-schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Report policies"
-schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\ScheduLe Maintenance Work"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Report policies"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\ScheduLe Maintenance Work"
 ::Schedule Scan = need TI/SYSTEM (Access denied)
-schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan"
-schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task"
-schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Wake To Work"
-schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Work"
-schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\UpdateModelTask"
-schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\USO_UxBroker"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan Static Task"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Wake To Work"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Work"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\UpdateModelTask"
+:: schtasks /Change /Disable /TN "\Microsoft\Windows\UpdateOrchestrator\USO_UxBroker"
 
 :right-click
 reg add "HKCR\DesktopBackground\Shell\0Toggle\shell\1Update" /v "icon" /t REG_SZ /d "c:\windows\SystemResources\compstui.dll.mun,-64007" /f
